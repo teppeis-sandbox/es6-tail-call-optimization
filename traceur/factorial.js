@@ -9,5 +9,5 @@ function factorial(n, acc) {
   }, this, arguments);
 }
 [0, 1, 2, 3, 4, 5, 10, 100, 1000, 10000, 100000].forEach(function(n) {
-  console.log(factorial(n, 1));
+  console.log(n, factorial(n, 1));
 });

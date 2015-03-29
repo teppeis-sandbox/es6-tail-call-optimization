@@ -1,16 +1,16 @@
 # factorial
 
 ## factorial - original
-1
-1
-2
-6
-24
-120
-3628800
-9.332621544394418e+157
-Infinity
-Infinity
+0 1
+1 1
+2 2
+3 6
+4 24
+5 120
+10 3628800
+100 9.332621544394418e+157
+1000 Infinity
+10000 Infinity
 /Users/teppeis/workspace/es6-tail-call-optimization/src/factorial.js:0
 (function (exports, require, module, __filename, __dirname) { 'use strict';
 
@@ -27,30 +27,30 @@ RangeError: Maximum call stack size exceeded
     at factorial (/Users/teppeis/workspace/es6-tail-call-optimization/src/factorial.js:5:10)
 
 ## factorial - babel
-1
-1
-2
-6
-24
-120
-3628800
-9.332621544394418e+157
-Infinity
-Infinity
-Infinity
+0 1
+1 1
+2 2
+3 6
+4 24
+5 120
+10 3628800
+100 9.332621544394418e+157
+1000 Infinity
+10000 Infinity
+100000 Infinity
 
 ## factorial - traceur
-1
-1
-2
-6
-24
-120
-3628800
-9.332621544394418e+157
-Infinity
-Infinity
-Infinity
+0 1
+1 1
+2 2
+3 6
+4 24
+5 120
+10 3628800
+100 9.332621544394418e+157
+1000 Infinity
+10000 Infinity
+100000 Infinity
 # factorial-cps
 
 ## factorial-cps - original
@@ -152,20 +152,20 @@ RangeError: Maximum call stack size exceeded
 10 '55'
 100 '354224848179261915075'
 1000 '43466557686937456435688527675040625802564660517371780402481729089536555417949051890403879840079255169295922593080322634775209689623239873322471161642996440906533187938298969649928516003704476137795166849228875'
-/Users/teppeis/workspace/es6-tail-call-optimization/node_modules/big-integer/BigInteger.js:0
-(function (exports, require, module, __filename, __dirname) { "use strict";
-
+/Users/teppeis/workspace/es6-tail-call-optimization/node_modules/big-integer/BigInteger.js:522
+        str = first.value[len].toString();
+                               ^
 RangeError: Maximum call stack size exceeded
-    at new BigInteger (/Users/teppeis/workspace/es6-tail-call-optimization/node_modules/big-integer/BigInteger.js)
-    at fastSubtract (/Users/teppeis/workspace/es6-tail-call-optimization/node_modules/big-integer/BigInteger.js:42:20)
-    at BigInteger.subtract (/Users/teppeis/workspace/es6-tail-call-optimization/node_modules/big-integer/BigInteger.js:137:32)
-    at /Users/teppeis/workspace/es6-tail-call-optimization/babel/fibonacci.js:30:16
+    at Number.toString (native)
+    at BigInteger.toString (/Users/teppeis/workspace/es6-tail-call-optimization/node_modules/big-integer/BigInteger.js:522:32)
+    at /Users/teppeis/workspace/es6-tail-call-optimization/babel/fibonacci.js:29:16
     at f (/Users/teppeis/workspace/es6-tail-call-optimization/babel/fibonacci.js:18:17)
     at /Users/teppeis/workspace/es6-tail-call-optimization/babel/fibonacci.js:30:12
     at f (/Users/teppeis/workspace/es6-tail-call-optimization/babel/fibonacci.js:18:17)
     at /Users/teppeis/workspace/es6-tail-call-optimization/babel/fibonacci.js:30:12
     at f (/Users/teppeis/workspace/es6-tail-call-optimization/babel/fibonacci.js:18:17)
     at /Users/teppeis/workspace/es6-tail-call-optimization/babel/fibonacci.js:30:12
+    at f (/Users/teppeis/workspace/es6-tail-call-optimization/babel/fibonacci.js:18:17)
 
 ## fibonacci - traceur
 0 '0'
