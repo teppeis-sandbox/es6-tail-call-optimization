@@ -1,18 +1,17 @@
 #!/bin/sh
 
-echo "factorial"
-echo "factorial - original"
+echo "# factorial"
+echo "\n## factorial - original"
 node src/factorial.js
-echo "factorial - babel"
+echo "\n## factorial - babel"
 node babel/factorial.js
-echo "factorial - traceur"
+echo "\n## factorial - traceur"
 node traceur/factorial-loader.js
 
-echo ""
-echo "fibonacci"
-echo "fibonacci - original"
+echo "\n# fibonacci"
+echo "\n## fibonacci - original"
 node src/fibonacci.js
-echo "fibonacci - babel"
+echo "\n## fibonacci - babel"
 node babel/fibonacci.js
-echo "fibonacci - traceur"
+echo "\n## fibonacci - traceur"
 node traceur/fibonacci-loader.js
