@@ -1,0 +1,19 @@
+{
+  "name": "es6-tail-call-optimization",
+  "version": "1.0.0",
+  "description": "Demo of ES6 tail call optimization with Babel and Traceur",
+  "main": "index.js",
+  "scripts": {
+  },
+  "keywords": [
+    "es6",
+    "babel",
+    "traceur"
+  ],
+  "author": "Teppei Sato <teppeis@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "babel": "^4.7.16",
+    "traceur": "0.0.87"
+  }
+}
