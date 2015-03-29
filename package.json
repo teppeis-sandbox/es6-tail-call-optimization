@@ -4,7 +4,7 @@
   "description": "Demo of ES6 tail call optimization with Babel and Traceur",
   "main": "index.js",
   "scripts": {
-    "test": "npm run build && ./run.sh",
+    "test": "npm run build && ./run.sh 2>&1 | tee run.log",
     "build": "npm run build:babel && npm run build:traceur",
     "build:babel": "babel -d babel src",
     "build:traceur": "traceur --proper-tail-calls true --modules commonjs --dir src traceur"
