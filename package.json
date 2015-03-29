@@ -17,6 +17,7 @@
   "license": "MIT",
   "dependencies": {
     "babel": "^4.7.16",
+    "big-integer": "^1.4.4",
     "traceur": "0.0.87"
   }
 }
