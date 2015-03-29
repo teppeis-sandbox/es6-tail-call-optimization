@@ -51,6 +51,63 @@ Infinity
 Infinity
 Infinity
 Infinity
+# factorial-cps
+
+## factorial-cps - original
+0 1
+1 1
+2 2
+3 6
+4 24
+5 120
+10 3628800
+100 9.33262154439441e+157
+1000 Infinity
+/Users/teppeis/workspace/es6-tail-call-optimization/src/factorial-cps.js:5
+  return factorial(n - 1, function(pre) {
+                                  ^
+RangeError: Maximum call stack size exceeded
+    at /Users/teppeis/workspace/es6-tail-call-optimization/src/factorial-cps.js:5:35
+    at /Users/teppeis/workspace/es6-tail-call-optimization/src/factorial-cps.js:6:12
+    at /Users/teppeis/workspace/es6-tail-call-optimization/src/factorial-cps.js:6:12
+    at /Users/teppeis/workspace/es6-tail-call-optimization/src/factorial-cps.js:6:12
+    at /Users/teppeis/workspace/es6-tail-call-optimization/src/factorial-cps.js:6:12
+    at /Users/teppeis/workspace/es6-tail-call-optimization/src/factorial-cps.js:6:12
+    at /Users/teppeis/workspace/es6-tail-call-optimization/src/factorial-cps.js:6:12
+    at /Users/teppeis/workspace/es6-tail-call-optimization/src/factorial-cps.js:6:12
+    at /Users/teppeis/workspace/es6-tail-call-optimization/src/factorial-cps.js:6:12
+    at /Users/teppeis/workspace/es6-tail-call-optimization/src/factorial-cps.js:6:12
+
+## factorial-cps - babel
+0 1
+1 1
+/Users/teppeis/workspace/es6-tail-call-optimization/babel/factorial-cps.js:15
+    _x2 = function (pre) {
+                   ^
+RangeError: Maximum call stack size exceeded
+    at _x2 (/Users/teppeis/workspace/es6-tail-call-optimization/babel/factorial-cps.js:15:20)
+    at _x2 (/Users/teppeis/workspace/es6-tail-call-optimization/babel/factorial-cps.js:16:14)
+    at _x2 (/Users/teppeis/workspace/es6-tail-call-optimization/babel/factorial-cps.js:16:14)
+    at _x2 (/Users/teppeis/workspace/es6-tail-call-optimization/babel/factorial-cps.js:16:14)
+    at _x2 (/Users/teppeis/workspace/es6-tail-call-optimization/babel/factorial-cps.js:16:14)
+    at _x2 (/Users/teppeis/workspace/es6-tail-call-optimization/babel/factorial-cps.js:16:14)
+    at _x2 (/Users/teppeis/workspace/es6-tail-call-optimization/babel/factorial-cps.js:16:14)
+    at _x2 (/Users/teppeis/workspace/es6-tail-call-optimization/babel/factorial-cps.js:16:14)
+    at _x2 (/Users/teppeis/workspace/es6-tail-call-optimization/babel/factorial-cps.js:16:14)
+    at _x2 (/Users/teppeis/workspace/es6-tail-call-optimization/babel/factorial-cps.js:16:14)
+
+## factorial-cps - traceur
+0 1
+1 1
+2 2
+3 6
+4 24
+5 120
+10 3628800
+100 9.33262154439441e+157
+1000 Infinity
+10000 Infinity
+100000 Infinity
 
 # fibonacci
 
