@@ -11,7 +11,8 @@ function fibonacci(n) {
 
   /**
    * @param {bigint} n
-   * @return {function(bigint): bigint}
+   * @param {function(bigint): bigint}
+   * @return {bigint}
    */
   var f = (function (_f) {
     var _fWrapper = function f(_x, _x2) {

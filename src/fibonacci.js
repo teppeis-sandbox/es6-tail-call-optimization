@@ -11,7 +11,8 @@ function fibonacci(n) {
 
   /**
    * @param {bigint} n
-   * @return {function(bigint): bigint}
+   * @param {function(bigint): bigint}
+   * @return {bigint}
    */
   var f = function(n, callback) {
     if (n.equals(bigint.zero)) return callback(bigint.zero);
