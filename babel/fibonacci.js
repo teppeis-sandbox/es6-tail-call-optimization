@@ -1,6 +1,6 @@
-"use strict";
+'use strict';
 
-var bigint = require("big-integer");
+var bigint = require('big-integer');
 
 /**
  * @param {bigint} n
@@ -15,15 +15,15 @@ function fibonacci(n) {
    * @return {bigint}
    */
   var f = (function (_f) {
-    var _fWrapper = function f(_x, _x2) {
+    function f(_x, _x2) {
       return _f.apply(this, arguments);
-    };
+    }
 
-    _fWrapper.toString = function () {
+    f.toString = function () {
       return _f.toString();
     };
 
-    return _fWrapper;
+    return f;
   })(function (n, callback) {
     if (n.equals(bigint.zero)) return callback(bigint.zero);
     if (n.equals(bigint.one)) return callback(bigint.one);

@@ -17,7 +17,7 @@
   "author": "Teppei Sato <teppeis@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "babel": "^4.7.16",
+    "babel": "^5.0.12",
     "big-integer": "^1.4.4",
     "traceur": "0.0.87"
   }

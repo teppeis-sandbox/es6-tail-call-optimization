@@ -88,11 +88,10 @@ RangeError: Maximum call stack size exceeded
 10 3628800
 100 9.33262154439441e+157
 1000 Infinity
-/Users/teppeis/workspace/es6-tail-call-optimization/babel/factorial-cps.js:14
-  })(function (n, callback) {
-              ^
+/Users/teppeis/workspace/es6-tail-call-optimization/babel/factorial-cps.js:6
+      return _f.apply(this, arguments);
+                ^
 RangeError: Maximum call stack size exceeded
-    at /Users/teppeis/workspace/es6-tail-call-optimization/babel/factorial-cps.js:14:15
     at f (/Users/teppeis/workspace/es6-tail-call-optimization/babel/factorial-cps.js:6:17)
     at /Users/teppeis/workspace/es6-tail-call-optimization/babel/factorial-cps.js:16:12
     at f (/Users/teppeis/workspace/es6-tail-call-optimization/babel/factorial-cps.js:6:17)
@@ -102,6 +101,7 @@ RangeError: Maximum call stack size exceeded
     at f (/Users/teppeis/workspace/es6-tail-call-optimization/babel/factorial-cps.js:6:17)
     at /Users/teppeis/workspace/es6-tail-call-optimization/babel/factorial-cps.js:16:12
     at f (/Users/teppeis/workspace/es6-tail-call-optimization/babel/factorial-cps.js:6:17)
+    at /Users/teppeis/workspace/es6-tail-call-optimization/babel/factorial-cps.js:16:12
 
 ## factorial-cps - traceur
 0 1

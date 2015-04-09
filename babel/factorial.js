@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 function factorial(_x, _x2) {
   var _again = true;

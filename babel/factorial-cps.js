@@ -1,16 +1,16 @@
-"use strict";
+'use strict';
 
 function factorial(n) {
   var f = (function (_f) {
-    var _fWrapper = function f(_x, _x2) {
+    function f(_x, _x2) {
       return _f.apply(this, arguments);
-    };
+    }
 
-    _fWrapper.toString = function () {
+    f.toString = function () {
       return _f.toString();
     };
 
-    return _fWrapper;
+    return f;
   })(function (n, callback) {
     if (n <= 1) return callback(1);
     return f(n - 1, function (pre) {
